@@ -1,398 +1,186 @@
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
 <!DOCTYPE html>
-<html lang="cn" dir="ltr" class="no-js">
-
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="maximum-scale=1.0,width=device-width,initial-scale=1.0,user-scalable=no">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <title>异步 </title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <link href="assets/css/nprogress.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/nivo-slider.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="assets/css/default.css" type="text/css" media="screen" />
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.nivo.slider.pack.js"></script>
-    <script src="assets/js/nprogress.js"></script>
-</head>
+<title>Welcome Page - Jingyi Zou</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Jalil Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"> </script>
+<!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+		</script>
+ 	<!---- start-smoth-scrolling---->
 
+</head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">
-              Toggle navigation
-            </span>
-            <span class="icon-bar">
-            </span>
-            <span class="icon-bar">
-            </span>
-            <span class="icon-bar">
-            </span>
-            </button>
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/img/logo.png" class="logo"/>
-            </a>
-        </div>
-        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav header-menu">
-                <li>
-                    <a href="index.html">
-                        首页
-                    </a>
-                </li>
-                <li>
-                    <a href="about.html">
-                        关于
-                    </a>
-                </li>
-                <li>
-                    <a href="blog.html">
-                        博客
-                    </a>
-                </li>
-                <li>
-                    <a href="works.html">
-                        作品
-                    </a>
-                </li>
-                <li>
-                    <a href="links.html">
-                        链接
-                    </a>
-                </li>
-                <li>
-                    <a href="contact.html">
-                        联系
-                    </a>
-                </li>
-                <li>
-                    <a href="help.html">
-                        帮助
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<div class="leftbar">
-    <!-- 左菜单 -->
-    <div class="left_menu">
-        <ul class="menu_link">
-            <li>
-                <a href="" class="simptip-position-right simptip-smooth simptip-movable"
-                   data-toggle="tooltip" data-placement="right" title="登陆">
-                    <img src="assets/img/login.png">
-              <span>
-                自定义链接
-              </span>
-                    <div class="clearfix">
-                    </div>
-                </a>
-            </li>
-            <li data-toggle="tooltip" data-placement="right" title="博客">
-                <a href="" class="simptip-position-right simptip-smooth simptip-movable"
-                   target="_black">
-                    <img src="assets/img/login.png">
-              <span>
-                注册
-              </span>
-                    <div class="clearfix">
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="" class="simptip-position-right simptip-smooth simptip-movable">
-                    <img src="assets/img/login.png">
-              <span>
-                自定义链接
-              </span>
-                    <div class="clearfix">
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="" class="simptip-position-right simptip-smooth simptip-movable"
-                   data-tooltip="自定义链接">
-                    <img src="assets/img/login.png">
-              <span>
-                自定义链接
-              </span>
-                    <div class="clearfix">
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="" class="simptip-position-right simptip-smooth simptip-movable"
-                   data-tooltip="自定义链接">
-                    <img src="assets/img/login.png">
-              <span>
-                自定义链接
-              </span>
-                    <div class="clearfix">
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="" class="simptip-position-right simptip-smooth simptip-movable"
-                   data-tooltip="自定义链接">
-                    <img src="assets/img/login.png">
-              <span>
-                自定义链接
-              </span>
-                    <div class="clearfix">
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="" class="simptip-position-right simptip-smooth simptip-movable"
-                   data-tooltip="自定义链接">
-                    <img src="assets/img/login.png">
-              <span>
-                自定义链接
-              </span>
-                    <div class="clearfix">
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="" class="simptip-position-right simptip-smooth simptip-movable"
-                   data-tooltip="自定义链接">
-                    <img src="assets/img/login.png">
-              <span>
-                自定义链接
-              </span>
-                    <div class="clearfix">
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="" class="simptip-position-right simptip-smooth simptip-movable"
-                   data-tooltip="自定义链接">
-                    <img src="assets/img/login.png">
-              <span>
-                自定义链接
-              </span>
-                    <div class="clearfix">
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
+<!--body-->
+<div id="home" class="banner">
+	 <div class="container">
+		 <div class="top-header">		  
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt="" /></a>
+				</div>
+			  <div class="top-menu">
+					<span class="menu"> </span>
+				  <ul>
+				      <nav class="cl-effect-5">
+							<li><a class="active scroll"  href="#home"><span data-hover="HOME">HOME</span></a></li> 
+							<li>/</li>
+							<li><a class="scroll" href="#research"><span data-hover="RESEARCH">RESEARCH</span></a></li>
+							<li>/</li>
+							<li><a class="scroll" href="#publications"><span data-hover="PUBLICATIONS">PUBLICATIONS</span></a></li> 
+							<li>/</li>
+							<li><a class="scroll" href="#notes"><span data-hover="NOTES & CODES">NOTES & CODES</span></a></li> 
+							<li>/</li>
+							<li><a class="scroll" href="#contact"><span data-hover="CONTACT ME">CONTACT ME</span></a></li>
+					 </nav>
+				  </ul>			 	 
+			  </div>	
+				<!-- script-for-menu -->
+			 <script>
+				$("span.menu").click(function(){
+					$(".top-menu ul").slideToggle("slow" , function(){
+					});
+				});
+			 </script>
+			 <!-- script-for-menu -->
+			 <div class="clearfix"></div>			
+		 </div>	 
+		 <div class="banner-info">	
+			<h1>Nice to meet you !</h1>
+			<h3>WELCOME TO JINGYI ZOU'S WEBSITE</h3>
+			<a class="downarrow scroll" href="#research"><span> </span></a>
+		 </div>
+	 </div>
 </div>
-<!--Start banner img-->
-<div class="container-filed" id="banner_container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="slider-wrapper theme-default">
-                <div id="slider" class="nivoSlider">
-                    <img src="assets/img/owl.jpg" data-thumb="assets/img/owl.jpg" alt="" />
-                    <a href="assets/img/owl2.jpg"><img src="assets/img/owl2.jpg" alt="" /></a>
-                    <img src="assets/img/owl.jpg" data-thumb="assets/img/owl.jpg" alt="" />
-                    <img src="assets/img/owl2.jpg" data-thumb="assets/img/owl2.jpg" alt="" />
-                </div>
-            </div>
-        </div>
-    </div>
+<!---->
+<div id="research" class="service">
+	 <div class="container">
+		 <div class="service-head">
+		 <h3>RESEARCH</h3>
+		 <h4>WHAT DO I DO?</h4>
+		 </div>
+		 <div class="service-grids">
+			 <div class="col-md-4 service-grid">
+				 <img src="images/pic1.png" alt=""/>
+				 <h3>2D MATERIAL</h3>
+				 <h4>GROWTH, TRANSFER & CHARACTERIZATION</h4>
+			 </div>
+			 <div class="col-md-4 service-grid">
+				 <img src="images/pic2.png" alt=""/>
+				 <h3>RECTENNA</h3>
+				 <h4>INFRARED ENERGY HARVESTING</h4>
+			 </div>
+			 <div class="col-md-4 service-grid">
+				 <img src="images/pic3.png" alt=""/>
+				 <h3>SPINTRONICS</h3>
+				 <h4>MRAM, NSD & OTHERS</h4>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>		 
+	 </div>
 </div>
-<!--End banner img-->
-<!--主要内容 -->
-    <div class="container-fluid main-container" id="main-container">
-        <div class="row top-title">
-            <div class="col-md-12">
-                <h1 class="page-title">
-                    最新文章
-                </h1>
-            </div>
-        </div>
-    <!--main Start-->
-    <div class="row">
-        <div class="col-md-12 post-container">
-            <h2 class="post-title">
-                <a href="content.html" title="">异步测试文章</a>
-            </h2>
-            <div class="meta-box">
-            <span class="m-post-date">
-              <i class="fa fa-calendar-o">
-              </i>
-              2015年6月3日
-            </span>
-            <span class="comments-link">
-              <a href="" class="ds-thread-count" data-thread-key="9500" title="Comment on 毕业两周年">
-                  <i class="fa fa-comments-o">
-                  </i>
-                  留言
-              </a>
-            </span>
-            </div>
-            <div class="post-content">
-                <p>
-                    如果您在使用中遇到什么麻烦的事情,那么baby千万不要捶胸顿足,在友情链接界面您会看到作者的博客链接，您可以通过访问作者的博客留言联系我
-                    <a href="http://www.ybsat.com">
-                        联系我
-                    </a>
-                    </p>
-            </div>
-            <div class="meta-box">
-            <span class="cat-links">
-              <i class="fa fa-navicon">
-              </i>
-              <b>
-                  分类:
-              </b>
-              <a href="topics/life/diary.htm">
-                  测试
-              </a>
-            </span>
-            <span class="tag-links">
-              <i class="fa fa-tags">
-              </i>
-              <b>
-                  标签:
-              </b>
-              <a href="tags/毕业.htm" rel="tag">
-                  异步
-              </a>
-            </span>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 post-container">
-            <h2 class="post-title">
-                <a href="content.html" title="">异步测试文章</a>
-            </h2>
-            <div class="meta-box">
-            <span class="m-post-date">
-              <i class="fa fa-calendar-o">
-              </i>
-              2015年6月3日
-            </span>
-            <span class="comments-link">
-              <a href="" class="ds-thread-count" data-thread-key="9500" title="Comment on 毕业两周年">
-                  <i class="fa fa-comments-o">
-                  </i>
-                  留言
-              </a>
-            </span>
-            </div>
-            <div class="post-content">
-                <p>
-                    leaves轻博客主要是将大家在博客中不需要的一些东西直接切割掉,只保存最实用的东西,这样使leaves变得更加简洁,同时更显得大方,由于leaves基于bootstrap所以说如果您想定制一些需要的东西是很好改动的．
-                    <a href="">
-                        这是一个链接
-                    </a>
-                    如果您觉得本博客的内容不够您的使用,您可以咨询作者,作者是很乐意为广大用户奉献代码的！
-                </p>
-            </div>
-            <div class="meta-box">
-            <span class="cat-links">
-              <i class="fa fa-navicon">
-              </i>
-              <b>
-                  分类:
-              </b>
-              <a href="topics/life/diary.html">
-                  测试
-              </a>
-            </span>
-            <span class="tag-links">
-              <i class="fa fa-tags">
-              </i>
-              <b>
-                  标签:
-              </b>
-              <a href="tags/毕业.html" rel="tag">
-                  异步
-              </a>
-            </span>
-            </div>
-        </div>
-    </div>
-    <!--更多内容-->
-    <div class="row">
-        <div class="col-md-12">
-            <h2 class="page-title">
-                <a href="blog.html" title="">更多内容</a>
-            </h2>
-        </div>
-    </div>
-    <!--跳转至博客页面-->
-    <div class="row">
-        <div class="col-md-12 post-container">
-            <div class="row">
-                <div class="col-md-4">
-                    <a class="btn btn-primary home-browser-more-btn" href="blog.html">
-                        <span>浏览更多文章</span>
-                    </a>
-                </div>
-                <div class="col-md-8">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--推荐阅读-->
-    <div class="row">
-        <div class="col-md-12 post-container m-recommend-page">
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="" class="thumbnail">
-                        <img src="assets/img/works.png" alt="作品展示">
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="" class="thumbnail">
-                        <img src="assets/img/study.png" alt="学习生活">
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="" class="thumbnail">
-                        <img src="assets/img/book.png" alt="作品推荐">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 网站底部 -->
-    <footer>
-        <!--版权信息-->
-        <div class="copyright">
-            Copyright Ybsat ©2016 All rights reserved 豫ICP备15027119&nbsp;&nbsp;
-            <a href="www.ybsat.com">
-                Theme leaves by Ybsat
-            </a>
-        </div>
-    </footer>
+<!---->
+<div class="author">
+	 <div class="container">
+		 
+		 <h3>Art is a step from what is obvious and well-known toward what is <span>arcane and concealed.</span></h3>
+		 <h4>- KAHLIL GIBRAN</h4>
+	 </div>
 </div>
-<script src="assets/js/bootstrap.min.js"></script>
-<script>
-        /*banner 初始化*/
-        $(window).load(function() {
-         $('#slider').nivoSlider({
-            effect: 'random',        // 过渡效果
-            controlNav: false,       // 是否显示图片导航控制按钮（,2,3... ）
-            pauseOnHover: true,      // 鼠标县浮时是否停止动画
-            manualAdvance: false,    // 是否手动切换 
-            animSpeed: 100,          // 图片过渡时间   
-            pauseTime: 2000,         // 图片显示时间
-            pauseOnHover: false,
-            manualAdvance: false,
-        });
-        });
-    $(document).ready(function(){
-        $('body').show();
-        $('.version').text(NProgress.version);
-        NProgress.start();
-        setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
-    })
-    
+<!---->
+<div id="publications" class="service">
+	 <div class="container">
+		 <div class="service-head">
+			 <h3>PUBLICATIONS</h3>
+			 <br />
+			 <br />
+		 </div>
+		 <div>
+		     <h4><b>2019</b></h4>
+		     <br />
+		     <h4>[1] Chen, W., Xie, X., Zong, J. et al. Growth and Thermo-driven Crystalline Phase Transition of Metastable Monolayer 1T′-WSe2 Thin Film.
+			     <span>Sci Rep 9, 2685 (2019) doi:<a href="https://doi.org/10.1038/s41598-019-39238-7" style="color:blue">10.1038/s41598-019-39238-7</a></span></h4>
+		     <br />
+		     <h4>Visit my <a href="https://scholar.google.cz/citations?user=lxYhBAUAAAAJ&hl=en" style="color:blue">Google Scholar</a> page for more information.</h4>
+		</div>
+	 </div>
+</div>	 
+<!---->
+<div id="notes" class="teamwork">
+	 <div class="container">
+		 <div class="team-head">
+		 <h3>NOTES & CODES</h3>
+		 <h4>FOR LEARNING REFERENCE ONLY</h4>
+		 </br>
+		 </br>
+		 </div>
+		 <div style="color:white;font-family:'Source code pro'">
+		 <h4>PN Junctions and Metal Semiconductor Contact <a href="notes/PN Junctions and Metal Semiconductor Contact.tex" style="color:yellow">TeX</a> 
+			<a href="notes/PN Junctions and Metal Semiconductor Contact.pdf" style="color:yellow">PDF</a></h4>
+		</br>
+		 </div>
+	 </div>
+</div>
+<!---contact-->
+<div id="contact" class="contact">
+	 <div class="container">
+		 <h3>CONTACT ME</h3>
+		 <h4>GREAT TO MAKE FRIENDS WITH YOU</h4>
+		 <div class="contact-form">
+			 <form name="sendmail" action=mailto:jzou9947@foxmail.com>
+				 <div class="col-md-6 contact-left">
+					<textarea name="body" placeholder="Message" required></textarea>
+				 </div>
+				 <div class="col-md-6 contact-right">
+					  <input name="cc" type="text" placeholder="E-mail Address" required/>
+					  <input name="subject" type="text" placeholder="Subject" required/> 
+					  <input type="submit" value="SEND"/>
+				  </div>
+				 <div class="clearfix"></div>
+			 </form>
+	     </div>
+	 </div>
+</div>
+<!---fotter-->
+<div class="fotter">
+	 <p>Copyrights &copy; 2019 JZ All rights reserved | Template by <a href="http://w3layouts.com/">W3layouts</a></p>
+</div>
+<!---->
+
+<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<script type="text/javascript">
+		$(document).ready(function() {
+				/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+});
 </script>
 </body>
-
 </html>

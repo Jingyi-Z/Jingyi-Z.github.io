@@ -1,0 +1,148 @@
+% The course note for PN Junctions and Metal Semiconductor Contacts in Coursera
+\documentclass{article}
+
+\usepackage{graphicx} % import pictures from files
+\usepackage{float} %set the position of table
+\usepackage{geometry}  %set up page size
+\geometry{a4paper, centering, scale = 0.8}
+\usepackage[nottoc]{tocbibind} % add content, reference, etc.  into the content. "nottoc" means the content itself won't be added.
+\usepackage{indentfirst} % indent the first line of the paragraph in each section
+\usepackage{url}
+\def\UrlBreaks{\do\A\do\B\do\C\do\D\do\E\do\F\do\G\do\H\do\I\do\J
+	
+	\do\K\do\L\do\M\do\N\do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V
+	
+	\do\W\do\X\do\Y\do\Z\do\[\do\\\do\]\do\^\do\_\do\`\do\a\do\b
+	
+	\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j\do\k\do\l\do\m\do\n
+	
+	\do\o\do\p\do\q\do\r\do\s\do\t\do\u\do\v\do\w\do\x\do\y\do\z
+	
+	\do\.\do\@\do\\\do\/\do\!\do\_\do\|\do\;\do\>\do\]\do\)\do\,
+	
+	\do\?\do\'\do+\do\=\do\#} 
+\usepackage[justification=centering]{caption}
+
+
+
+\title{\textbf{Diode - PN Junctions and Metal Semiconductor Contacts}}   %Title
+\author{\texttt{J. Z.}}  %Author
+\date{\texttt{Sep.4 2019}}  %Date
+
+\bibliographystyle{plain}  %Type of bibliography
+\newtheorem{thm}{Theorm} %Define a theorm environment
+\newtheorem{thm2}{Definition}
+\newenvironment{myquote}  
+{\begin{quote} \ttfamily\itshape}
+	{\end{quote}}
+%set uniform format for quotations
+
+\begin{document}  %Start of the document
+	
+	\maketitle  %Print the title
+	\tableofcontents %Print the Content
+	
+	\section{PN Junction}
+	
+	\begin{thm2}[PN Junction]
+	An \textbf{intimate contact} (interface between two materials that allows free carriers to move across the boundary) between \textbf{n-type} (cathode) and \textbf{p-type} (anode) \textbf{semiconductors}. The \textbf{forward bias} is defined when p-type is at higher voltage than n-type.
+	\end{thm2}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.8]{pnjunction.png}
+		\caption{Crosssection of a PN junction. $https://ecee.colorado.edu/~bart/book/book/chapter4/ch4\_2.htm$ }
+		\label{Fig1}
+ 	\end{figure}
+ 
+    \begin{center}
+    
+    \end{center}
+ 
+    Three steps to form a PN junction:  (1) Two separate p- and n-type semiconductors of the same material. (2) Two semiconductors brought into contact immediately. (3) After enough time they reach thermal equilbrium.
+    
+    When the device reaches equlibrium. the Fermi level is constant through the system. Far away from the PN junction, the electrical properties will be the same as isolated semiconductors.
+    
+    \begin{thm2}[Energy barrier]
+    	The energy difference between p-type side and n-type side in the band picture.It is represented by the built-in potential $\phi_i$ and equal to the difference in Fermi energy before the junction is formed.
+    \end{thm2}
+    
+    According to the defition of potential, 
+    \[\phi_n =\frac{E_F-E_i}{q} = kT\ln\frac{n}{n_i}= kT\ln\frac{N_D}{n_i}\]
+    \[\phi_p =\frac{E_i-E_F}{q} = kT\ln\frac{n_i}{p}= - kT\ln\frac{N_A}{n_i}\]
+    \[\Rightarrow \phi_i = \phi_n - \phi_p = kT\ln\frac{N_DN_A}{n_i^2} and q\phi_i =(E_F)_n-(E_F)_p\]
+    
+   \begin{thm2}[Depletion Approximation]
+    The semiconductor can be devided into two regions: the depletion region (near pn-junction, no mobile carrier) and quasi-neutral region (far from pn junction, $n = N_D\ (n-type)\ or\ N_A\ (p-type)$). At the boundry of depletion region and quasi-neutral region the carrier concentration changes \textbf{abruptly}.
+   \end{thm2}
+   
+    
+    	\subsection{PN Junction with Various Doping Profiles}
+    	
+    	\subsubsection{Step Junction}
+    		
+    		 
+    		Step junction: Abrupt junction between uniformly doped p and n semiconductors.
+    		Applying the depletion approximation, the Poisson's equation within the depletion region ($p=n=0$):
+    		
+    		\[ \frac{d^2\phi}{dx^2} = -\frac{\rho(x)}{\epsilon_s} =-\frac{q}{\epsilon_s}(p-n+N_D-N_A) = -\frac{q}{\epsilon_s}(N_D-N_A)  \]
+    		
+    		In n-type region($ 0<x<x_n $):
+    		
+    		\[
+    		\frac{d^2\phi}{dx^2} =-\frac{qN_D}{\epsilon_s}  = -\frac{dE}{dx}
+    		\]
+    		\[
+    		Boundary\ condition: E(x=x_n)=0
+    		\]
+    		\[
+    		\Rightarrow E(x) =- \frac{qN_D}{\epsilon_s} (x_n-x)
+    		\]
+    		
+    		In p-type region ($-x_p<x<0$):
+    		
+    		\[
+    		\frac{d^2\phi}{dx^2} =\frac{qN_A}{\epsilon_s}  = -\frac{dE}{dx}
+    		\]
+    		\[
+    		Boundary\ condition: E(x=-x_p)=0
+    		\]
+    		\[
+    		\Rightarrow E(x) = -\frac{qN_A}{\epsilon_s}(x_p+x)
+    		\]
+    		
+    		At x=0, the electric field should be continuous:
+    		
+    		\[
+    		\frac{qN_Dx_n}{\epsilon_s} =  \frac{qN_Ax_p}{\epsilon_s}
+    		\Rightarrow N_Dx_n = N_Ax_p
+    		\]
+    		
+    		which is just the charge neurality condition. It means that total negative charges generated should be equal to positive ones.
+    		
+    		\subsubsection{Linearly Graded PN Junction}
+	
+	    \subsection{C-V and I-V Characteristics}
+	
+    	\subsection{Junction Breakdown}
+	
+    	\subsection{Heterojunction}
+    	
+	\section{Metal-Semiconductor Contacts}
+	
+	    \subsection{Schottky Contact}
+	    
+	    \subsection{Ohmic Contact}
+	    
+	\section{Optoelectronic Devices}
+	
+	    \subsection{Light Emitting Diode (LED)}
+	    
+	    \subsection{Laser Diode}
+	    
+	    \subsection{Photodiode}
+	    
+	    \subsection{Solar Cell}
+	    
+	
+\end{document}
